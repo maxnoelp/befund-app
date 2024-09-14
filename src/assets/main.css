@@ -1,0 +1,15 @@
+*,
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --container-color: ;
+  --arrow-color: ;
+}
+
+.pointer {
+  cursor: pointer;
+}
