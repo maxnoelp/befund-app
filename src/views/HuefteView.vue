@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <header><h1 class="text-decoration-underline text-center">Befund: Hüfte</h1></header>
-    <main>
+  <div class="container">
+    <div class="mt-4">
+      <h1 class="text-decoration-underline text-center">Befundstest Hüfte</h1>
+    </div>
+    <div class="middle-content d-flex justify-content-center align-items-center pb-5">
       <BefundHuefteView />
-    </main>
+    </div>
   </div>
 </template>
 <script>
@@ -13,4 +15,14 @@ export default {
   components: { BefundHuefteView },
 };
 </script>
-<style></style>
+<style>
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-content {
+  flex-grow: 1;
+}
+</style>

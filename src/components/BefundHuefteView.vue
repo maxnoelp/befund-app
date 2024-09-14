@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div v-if="menu == MENU.STARTPAGE">
-      <h1>Einschränkungen?</h1>
-      <div class="">
-        <button @click="menu = MENU.KM" type="button" class="btn btn-secondary">Ja</button>
-        <button @click="menu = MENU.ENO" type="button" class="btn btn-secondary">Nein</button>
+    <div class="container-sm text-center outliner p-4" v-if="menu == MENU.STARTPAGE">
+      <h2>Einschränkungen?</h2>
+      <div class="d-flex justify-content-between">
+        <button @click="menu = MENU.KM" type="button" class="btn btn-secondary m-1">Ja</button>
+        <button @click="menu = MENU.ENO" type="button" class="btn btn-secondary m-1">Nein</button>
       </div>
     </div>
     <div v-if="menu == MENU.KM">
